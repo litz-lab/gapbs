@@ -231,6 +231,7 @@ bool BCVerifier(const Graph &g, SourcePicker<Graph> &sp, NodeID num_iters,
 
 
 int main(int argc, char* argv[]) {
+  srand(0);
   CLIterApp cli(argc, argv, "betweenness-centrality", 1);
   if (!cli.ParseArgs())
     return -1;

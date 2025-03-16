@@ -248,6 +248,7 @@ bool BFSVerifier(const Graph &g, NodeID source,
 
 
 int main(int argc, char* argv[]) {
+  srand(0);
   CLApp cli(argc, argv, "breadth-first search");
   if (!cli.ParseArgs())
     return -1;

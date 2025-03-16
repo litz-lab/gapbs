@@ -195,6 +195,7 @@ bool SSSPVerifier(const WGraph &g, NodeID source,
 
 
 int main(int argc, char* argv[]) {
+  srand(0);
   CLDelta<WeightT> cli(argc, argv, "single-source shortest-path");
   if (!cli.ParseArgs())
     return -1;
